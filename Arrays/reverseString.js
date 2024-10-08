@@ -7,5 +7,12 @@ function reverse(str) {
   return backwards.join("");
 }
 
+function reverse2(str) {
+  //check for valid input
+  return str.split("").reverse().join("");
+}
+
+const reverse3 = (str) => [...str].reverse().join("");
+
 const newString = "Hi My name is Alina";
 console.log(reverse(newString));
